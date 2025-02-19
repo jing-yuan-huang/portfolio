@@ -1,10 +1,43 @@
+document.addEventListener("DOMContentLoaded", function () {
+  const animatedElements = document.querySelectorAll(".fadeInUp"); 
 
-//let header = document.querySelector("header");
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("animated"); 
+        } else {
+          entry.target.classList.remove("animated"); 
+        }
+      });
+    },
+    { threshold: 0.5 } 
+  );
 
-//window.addEventListener("scroll", () => {
- // if (window.scrollY == 0) {
-   // header.style.boxShadow = "";
- // } else {
-   // header.style.boxShadow = "0 10px 6px -6px #777";
- // }
-//});
+  animatedElements.forEach((element) => observer.observe(element));
+});
+
+
+document.addEventListener("DOMContentLoaded", function () {
+  const menuToggle = document.querySelector(".menu-toggle");
+  const closeMenu = document.querySelector(".close-menu");
+  const nav = document.querySelector("nav");
+
+  menuToggle.addEventListener("click", function (event) {
+      event.stopPropagation(); // 防止點擊時觸發外部事件
+      nav.classList.add("active");
+  });
+
+  closeMenu.addEventListener("click", function () {
+      nav.classList.remove("active");
+  });
+
+  document.addEventListener("click", function (event) {
+      if (!nav.contains(event.target) && !menuToggle.contains(event.target)) {
+          nav.classList.remove("active");
+      }
+  });
+});
+
+
+

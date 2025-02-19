@@ -18,10 +18,8 @@ body {
 }
 body .bg-svg {
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
+  width: 100vw;
+  height: 100vh;
   -o-object-fit: cover;
      object-fit: cover;
   z-index: -1;
@@ -32,18 +30,16 @@ body header {
   background-color: rgb(43, 42, 42);
   align-items: center;
   flex-wrap: wrap;
-  gap: 35vh;
   position: sticky;
   top: 0;
   z-index: 10;
-  padding-top: 1.5rem;
-  padding-bottom: 1rem;
+  padding: 1.5rem 3.5rem 1rem 1rem;
+  justify-content: space-between;
 }
 body header div.logo {
   display: flex;
   align-items: center;
-  flex: 4 1 300px;
-  padding-left: 5rem;
+  padding-left: 2rem;
   gap: 1rem;
 }
 body header div.logo h1 {
@@ -52,12 +48,25 @@ body header div.logo h1 {
   color: white;
 }
 body header div.logo img {
-  width: 4vw;
-  height: 4vw;
+  width: 50px;
+  height: 50px;
   border-radius: 50px;
 }
-body header nav {
-  flex: 5 1 300px;
+body header .menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 2rem;
+  color: white;
+  cursor: pointer;
+}
+body header nav .close-menu {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 2rem;
+  color: white;
+  cursor: pointer;
 }
 body header nav ul {
   display: flex;
@@ -99,10 +108,18 @@ body main section.main-area div.info h1 {
   font-size: 5rem;
   color: rgb(239, 218, 180);
   padding: 1rem;
+  opacity: 0;
 }
 body main section.main-area div.info h2 {
   font-size: 1.5rem;
-  color: white;
+  color: rgb(239, 218, 180);
+  opacity: 0;
+}
+body main section.main-area div.info .fadeInUp {
+  opacity: 0;
+}
+body main section.main-area div.info .animated {
+  animation: fadeInUp 1s ease-out forwards;
 }
 body main section.work-area {
   background-color: rgb(253, 244, 227);
@@ -166,6 +183,14 @@ body main section.work-area div.cards-container div.card .card-content {
 body main section.work-area div.cards-container div.card .card-content h3 {
   margin: 0 0 0.2rem;
   font-size: 1.5rem;
+  color: #fefcfc;
+  font-weight: 500;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
+}
+body main section.work-area div.cards-container div.card .card-content h4 {
+  padding-left: 0.2rem;
+  padding-bottom: 0.2rem;
+  font-size: 1rem;
   color: #fefcfc;
   font-weight: 500;
   text-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
@@ -234,15 +259,71 @@ body main footer .footer-container .footer-links .copyright {
 }
 
 @media screen and (max-width: 800px) {
-  body main section.about-me section.description {
-    width: 80%;
+  body header {
+    padding: 1.5rem 2.5rem 0.5rem 0.5rem;
+  }
+  body header .menu-toggle {
+    display: block !important;
+    margin-right: 0rem;
+  }
+  body header nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 60vw;
+    height: 100vh;
+    background: rgba(43, 42, 42, 0.95);
+    transition: right 0.3s ease-in-out;
+  }
+  body header nav.active {
+    right: 0;
+  }
+  body header nav .close-menu {
+    display: block !important;
+    position: absolute;
+    top: 1rem;
+    right: 2rem;
+    background: none;
+    border: none;
+    font-size: 2.5rem;
+    color: white;
+    cursor: pointer;
+  }
+  body header nav ul {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    text-align: center;
+    padding: 0;
+    margin-top: 5rem;
+  }
+  body header nav ul li {
+    list-style: none;
+  }
+  body header nav ul li a {
+    font-size: 1.5rem;
+    font-weight: 400;
+    padding: 0.5rem 1rem;
+  }
+  body main section.main-area div.info h1 {
+    font-size: 7vw;
+    padding: 0.5rem;
+  }
+  body main section.main-area div.info h2 {
+    font-size: 3.5vw;
   }
 }
-@media screen and (max-width: 500px) {
-  body nav {
-    position: static;
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
   }
-  body nav ul {
-    flex-direction: column;
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
 }/*# sourceMappingURL=style.css.map */
