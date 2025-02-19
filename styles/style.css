@@ -123,7 +123,7 @@ body main section.main-area div.info .animated {
 }
 body main section.work-area {
   background-color: rgb(253, 244, 227);
-  margin: 5rem 5rem 10rem 5rem;
+  margin: 1rem 5rem 10rem 5rem;
 }
 body main section.work-area .topic {
   display: flex;
@@ -134,17 +134,17 @@ body main section.work-area .topic h1 {
   text-align: center;
   font-size: 2rem;
   color: rgb(19, 19, 19);
-  padding-bottom: 2rem;
   font-weight: 500;
+  margin: 1rem;
 }
-body main section.work-area div.cards-container {
+body main section.work-area div.cards-container1 {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
   gap: 2rem;
   top: 2rem;
   transition: transform 0.3s ease;
 }
-body main section.work-area div.cards-container div.card {
+body main section.work-area div.cards-container1 div.card {
   position: relative;
   width: 400px;
   height: auto;
@@ -152,42 +152,42 @@ body main section.work-area div.cards-container div.card {
   overflow: hidden;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
-body main section.work-area div.cards-container div.card:hover {
+body main section.work-area div.cards-container1 div.card:hover {
   transform: scale(1.05);
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
-body main section.work-area div.cards-container div.card image {
+body main section.work-area div.cards-container1 div.card img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
   display: block;
 }
-body main section.work-area div.cards-container div.card::before {
+body main section.work-area div.cards-container1 div.card::before {
   content: "";
   position: absolute;
   inset: 0;
   background-color: rgba(0, 0, 0, 0.1);
   z-index: 1;
 }
-body main section.work-area div.cards-container div.card:hover::before {
+body main section.work-area div.cards-container1 div.card:hover::before {
   background-color: rgba(0, 0, 0, 0.4);
 }
-body main section.work-area div.cards-container div.card .card-content {
+body main section.work-area div.cards-container1 div.card .card-content {
   position: absolute;
   padding: 1rem;
   top: 0.2rem;
   left: 0.2rem;
   z-index: 2;
 }
-body main section.work-area div.cards-container div.card .card-content h3 {
+body main section.work-area div.cards-container1 div.card .card-content h3 {
   margin: 0 0 0.2rem;
   font-size: 1.5rem;
   color: #fefcfc;
   font-weight: 500;
   text-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
 }
-body main section.work-area div.cards-container div.card .card-content h4 {
+body main section.work-area div.cards-container1 div.card .card-content h4 {
   padding-left: 0.2rem;
   padding-bottom: 0.2rem;
   font-size: 1rem;
@@ -195,7 +195,7 @@ body main section.work-area div.cards-container div.card .card-content h4 {
   font-weight: 500;
   text-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
 }
-body main section.work-area div.cards-container div.card .card-content p {
+body main section.work-area div.cards-container1 div.card .card-content p {
   margin-left: 0.2rem;
   margin-top: 0.3rem;
   font-size: 1rem;
@@ -207,9 +207,57 @@ body main section.work-area div.cards-container div.card .card-content p {
   transition: opacity 0.2s ease, transform 0.1s ease;
   z-index: 3;
 }
-body main section.work-area div.cards-container div.card .card-content p:hover {
+body main section.work-area div.cards-container1 div.card .card-content p:hover {
   opacity: 1;
   transform: translateY(0);
+}
+body main section.work-area div.cards-container2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+body main section.work-area div.cards-container2 div.card {
+  display: flex;
+  width: 50vw;
+  height: auto;
+  margin: 2rem 1.5rem;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.4s ease-in-out, box-shadow 0.4s ease-in-out;
+}
+body main section.work-area div.cards-container2 div.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+body main section.work-area div.cards-container2 div.card img {
+  width: 100%;
+  height: 100%;
+}
+body main section.work-area div.cards-container2 div.card .card-content {
+  display: flex;
+  padding: 1.5rem 2rem;
+}
+body main section.work-area div.cards-container2 div.card .card-content h3 {
+  flex: 1 1 100px;
+  font-size: 1.5rem;
+  color: #0b0b0b;
+  font-weight: 500;
+}
+body main section.work-area div.cards-container2 div.card .card-content .describe {
+  flex: 1 1 200px;
+  display: flex;
+  flex-direction: column;
+}
+body main section.work-area div.cards-container2 div.card .card-content .describe h4 {
+  font-size: 1rem;
+  color: #040404;
+  font-weight: 600;
+}
+body main section.work-area div.cards-container2 div.card .card-content .describe p {
+  font-size: 1rem;
+  color: #494747;
+  font-weight: 400;
 }
 body main footer {
   background-color: rgb(43, 42, 42);
