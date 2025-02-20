@@ -40,4 +40,14 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 
+function scrollToWork() {
+  const section = document.getElementById("worksection");
+  const offset = 130; 
+  const sectionPosition = section.offsetTop - offset;
+
+  window.scrollTo({
+    top: sectionPosition,
+    behavior: "smooth"
+  });
+}
 
