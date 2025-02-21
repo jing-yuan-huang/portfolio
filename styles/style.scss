@@ -366,7 +366,8 @@ body {
         display: flex;
         align-items: center;
         justify-content: center;
-        margin: 2rem;
+        margin: 4rem 1rem 0rem 1rem;
+        
 
         img{
           width: 30px;
@@ -382,6 +383,77 @@ body {
           padding: 0.5rem,;
         }
 
+      }
+
+      .publications{
+        display: flex;
+        flex-direction: column;
+
+        .publication{
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          margin: 1rem 3rem;
+  
+          
+          img{
+            flex: 0 0 300px;
+            width: 300px;
+            padding: 1rem;
+            padding-right: 3rem;
+          }
+  
+          .describe{
+            flex: 1 1 500px;
+            display: flex;
+            flex-direction: column;
+            padding: 1rem;
+  
+              h1{
+                font-size: 1.5rem;
+                font-weight: 500;
+              }
+              p{
+                font-size: 1rem;
+                margin-bottom: 0.3rem;
+                color: #555454;
+  
+                .underline{
+                  display: inline-block;
+                  border-bottom: 2px solid#696767;
+                }
+  
+              }
+              h3{
+                font-size: 1rem;
+                .award {
+                  font-size: 0.9em;
+                  font-weight: bold;
+                  color: rgb(183, 82, 82); /* 你可以换成 gold 让它更显眼 */
+                  margin-left: 8px;
+                }
+  
+              }
+              .link{
+                display: flex;
+                align-items: center;
+                gap: 1rem;
+                a{
+                  img{
+                    padding: 0;
+                    width:1.5rem;
+                  }
+                }
+                
+              }
+    
+          }
+          }
+  
+
+      }
+
+      
       }
     }
 
@@ -444,11 +516,12 @@ body {
 
     }
 
-  }
+  
 }
 
 
 @media screen and (max-width: 800px) {
+
   body{
 
     header {
@@ -526,28 +599,60 @@ body {
           }
         }
       }
-    }
 
-    section.work-area{
+      section.work-area{
       
-      div.cards-container2 {
-
-        .card{
-          .card-content{
-            flex-direction: column;
-            
-            h3{
-              flex: 1 1 20px !important;
-            }
+        div.cards-container2 {
   
-            .describe{
-              flex: 1 1 50px !important;
+          .card{
+            .card-content{
+              flex-direction: column;
+              
+              h3{
+                flex: 1 1 20px !important;
+              }
+    
+              .describe{
+                flex: 1 1 50px !important;
+              }
             }
           }
+    
         }
-  
       }
+
+      section.normal-area{
+
+        .publications{
+
+          .publication{
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin: 1rem;
+  
+            img {
+              flex: 0 0 100px ;
+              padding-right: 1rem;
+            }
+  
+            .describe {
+  
+              flex: unset; 
+              width: 100%;
+              padding: 0;
+
+            }
+
+            
+          }
+
+        }
+        
+      }
+      
     }
+
     
 
     
