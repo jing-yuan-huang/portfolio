@@ -498,6 +498,7 @@ body {
         flex-direction: column;
         align-items: center; 
         text-align: center;
+        margin-bottom: 2rem;
 
         .intro{
           margin-bottom: 3rem;
@@ -518,8 +519,16 @@ body {
             padding: 1rem;
             border-radius: 30px;
           }
-  
+
+          img{
+            width: 100%;
+            max-width: 1000px;
+            padding: 1rem;
+            border-radius: 30px;
+          }
+
           h4{
+            padding-top: 1rem;
             max-width: 800px;
             font-size: 1.2rem;
           }
@@ -621,7 +630,7 @@ body {
         }
 
         .research{
-
+          margin-top: 2rem;
           width: 100%;
           max-width: 800px;
           text-align: center;
@@ -629,10 +638,12 @@ body {
           h3{
             font-size: 1.8rem;
             font-weight: 600;
+            padding-bottom: 1rem;
           }
           
           .content{
             text-align: left;
+            margin-bottom: 2rem;
             
             h5{
   
@@ -650,7 +661,7 @@ body {
           display: flex;
           flex-wrap: wrap;
           justify-content: center;
-          margin-bottom: 2rem;
+          margin-bottom: 4rem;
           gap: 10%;
 
           .stage{
@@ -660,9 +671,9 @@ body {
             text-align: center;
             img{
               width: 100%;
-              max-width: 400px;
+              max-width: 450px;
               height: auto;
-              margin: 1rem;
+              margin: 0.6rem;
             }
 
           }
@@ -703,6 +714,7 @@ body {
           max-width: 800px;
           text-align: left;
           margin-bottom: 2rem;
+          margin-top: 2rem;
 
           h5{
             font-size: 1.2rem;
@@ -725,10 +737,24 @@ body {
         .definition{
           width: 100%;
           max-width: 800px;
+          margin: 3rem 0rem;
+
+          h3{
+            font-size: 1.8rem;
+            font-weight: 600;
+            padding-bottom: 1rem;
+          }
+
           h4{
             font-size: 1.2rem;
             text-align: left;
             font-weight: 600;
+          }
+          h5{
+            font-size: 1.2rem;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+            text-align: left;
           }
          
           .pov{
@@ -813,7 +839,7 @@ body {
             }
   
             th {
-              background-color: #ffffff00;
+              background-color:  #f2f2f2;
               font-weight: bold;
             }
           }
@@ -824,7 +850,7 @@ body {
         .design,.testing,.reflection{
 
           width: 100%;
-          max-width: 1000px;
+          max-width: 800px;
           text-align: center;
           
 
