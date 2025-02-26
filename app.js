@@ -51,3 +51,22 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   };
 });
+
+
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+  anchor.addEventListener("click", function(event) {
+      event.preventDefault(); 
+
+      const targetId = this.getAttribute("href").substring(1); // 取得 ID
+      const targetElement = document.getElementById(targetId);
+      const offset = 130; 
+
+      if (targetElement) {
+          const elementPosition = targetElement.getBoundingClientRect().top + window.scrollY;
+          window.scrollTo({
+              top: elementPosition - offset, 
+              behavior: "smooth"
+          });
+      }
+  });
+});

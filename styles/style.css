@@ -364,14 +364,17 @@ body main section.workintro-area .tag {
   gap: 2rem;
 }
 body main section.workintro-area .tag li {
-  font-size: 16px;
-  color: rgb(12, 12, 12);
-  list-style: none;
-  transition: all 0.3s ease-in-out;
+  list-style: none !important;
 }
-body main section.workintro-area .tag li:hover {
-  color: rgb(224, 170, 9);
-  text-decoration: underline;
+body main section.workintro-area .tag li a {
+  font-size: 16px;
+  color: rgb(12, 12, 12) !important;
+  text-decoration: none !important;
+  transition: all 0.3s ease-in-out !important;
+}
+body main section.workintro-area .tag li a:hover {
+  color: rgb(224, 170, 9) !important;
+  text-decoration: underline !important;
 }
 body main section.workintro-area section.contect {
   display: flex;
@@ -636,23 +639,38 @@ body main section.workintro-area section.contect .definition .table th {
   background-color: rgba(255, 255, 255, 0);
   font-weight: bold;
 }
-body main section.workintro-area section.contect .design, body main section.workintro-area section.contect .testing {
+body main section.workintro-area section.contect .design, body main section.workintro-area section.contect .testing, body main section.workintro-area section.contect .reflection {
   width: 100%;
   max-width: 1000px;
   text-align: center;
 }
-body main section.workintro-area section.contect .design h3, body main section.workintro-area section.contect .testing h3 {
+body main section.workintro-area section.contect .design h3, body main section.workintro-area section.contect .testing h3, body main section.workintro-area section.contect .reflection h3 {
   font-size: 1.8rem;
   font-weight: 600;
   margin-bottom: 0rem;
 }
-body main section.workintro-area section.contect .design h5, body main section.workintro-area section.contect .testing h5 {
+body main section.workintro-area section.contect .design h5, body main section.workintro-area section.contect .testing h5, body main section.workintro-area section.contect .reflection h5 {
   text-align: left;
   font-size: 1.2rem;
   font-weight: 600;
-  margin-bottom: 2rem;
+  margin-bottom: 1.5rem;
 }
-body main section.workintro-area section.contect .design img, body main section.workintro-area section.contect .testing img {
+body main section.workintro-area section.contect .design h6, body main section.workintro-area section.contect .testing h6, body main section.workintro-area section.contect .reflection h6 {
+  text-align: left;
+  font-size: 1rem;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+body main section.workintro-area section.contect .design ul, body main section.workintro-area section.contect .testing ul, body main section.workintro-area section.contect .reflection ul {
+  text-align: left;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+body main section.workintro-area section.contect .design p, body main section.workintro-area section.contect .testing p, body main section.workintro-area section.contect .reflection p {
+  text-align: left;
+  font-size: 1rem;
+}
+body main section.workintro-area section.contect .design img, body main section.workintro-area section.contect .testing img, body main section.workintro-area section.contect .reflection img {
   display: block;
   margin: 1rem auto;
   width: auto;
@@ -661,10 +679,10 @@ body main section.workintro-area section.contect .design img, body main section.
   -o-object-fit: cover;
      object-fit: cover;
 }
-body main section.workintro-area section.contect .design .bigpic, body main section.workintro-area section.contect .testing .bigpic {
+body main section.workintro-area section.contect .design .bigpic, body main section.workintro-area section.contect .testing .bigpic, body main section.workintro-area section.contect .reflection .bigpic {
   align-items: center;
 }
-body main section.workintro-area section.contect .design .bigpic img, body main section.workintro-area section.contect .testing .bigpic img {
+body main section.workintro-area section.contect .design .bigpic img, body main section.workintro-area section.contect .testing .bigpic img, body main section.workintro-area section.contect .reflection .bigpic img {
   margin: 1rem auto;
   width: auto;
   max-width: 90vw;
@@ -672,33 +690,24 @@ body main section.workintro-area section.contect .design .bigpic img, body main 
   -o-object-fit: cover;
      object-fit: cover;
 }
-body main section.workintro-area section.contect .design .designcontainer, body main section.workintro-area section.contect .testing .designcontainer {
+body main section.workintro-area section.contect .design .designcontainer, body main section.workintro-area section.contect .testing .designcontainer, body main section.workintro-area section.contect .reflection .designcontainer {
   max-width: 800px;
   text-align: left;
   margin: 3rem 2rem 4rem 2rem;
 }
-body main section.workintro-area section.contect .design .designcontainer h5, body main section.workintro-area section.contect .testing .designcontainer h5 {
+body main section.workintro-area section.contect .design .designcontainer h5, body main section.workintro-area section.contect .testing .designcontainer h5, body main section.workintro-area section.contect .reflection .designcontainer h5 {
   font-size: 1.2rem;
   font-weight: 600;
   margin-bottom: 1rem;
 }
-body main section.workintro-area section.contect .design .designcontainer ul, body main section.workintro-area section.contect .testing .designcontainer ul {
+body main section.workintro-area section.contect .design .designcontainer ul, body main section.workintro-area section.contect .testing .designcontainer ul, body main section.workintro-area section.contect .reflection .designcontainer ul {
   font-size: 1rem;
 }
-body main section.workintro-area .hifi {
-  margin: 5rem 2rem;
-  background-color: #e0dddd;
-}
-body main section.workintro-area .hifi h3 {
-  font-size: 1.8rem;
-  font-weight: 600;
-  margin-top: 2.5rem;
-}
-body main section.workintro-area .buttonin {
+body main section.workintro-area section.contect .buttonin {
   display: flex;
   justify-content: center;
 }
-body main section.workintro-area .buttonin button {
+body main section.workintro-area section.contect .buttonin button {
   background-color: black;
   color: white;
   padding: 10px 16px;
@@ -708,8 +717,17 @@ body main section.workintro-area .buttonin button {
   transition: background-color 0.3s ease-in-out;
   margin-bottom: 3rem;
 }
-body main section.workintro-area .buttonin button:hover {
+body main section.workintro-area section.contect .buttonin button:hover {
   color: rgb(254, 192, 5);
+}
+body main section.workintro-area .hifi {
+  margin: 5rem 2rem;
+  background-color: #e0dddd;
+}
+body main section.workintro-area .hifi h3 {
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-top: 2.5rem;
 }
 body footer {
   background-color: rgb(43, 42, 42);

@@ -473,18 +473,23 @@ body {
         flex-direction: row;
         gap:2rem;
         
-
         li{
-          font-size: 16px;
-          color: rgb(12, 12, 12);
-          list-style: none;
-          transition: all 0.3s ease-in-out; 
+          list-style: none !important;
 
-          &:hover{
-            color: rgb(224, 170, 9);
-            text-decoration: underline;
-          }
-        } 
+          a{
+            font-size: 16px;
+            color: rgb(12, 12, 12) !important;
+            text-decoration: none !important;
+            transition: all 0.3s ease-in-out !important; 
+  
+            &:hover{
+              color: rgb(224, 170, 9) !important;
+              text-decoration: underline !important;
+            }
+          } 
+
+        }
+        
         
       }
       
@@ -816,7 +821,7 @@ body {
         }
   
 
-        .design,.testing{
+        .design,.testing,.reflection{
 
           width: 100%;
           max-width: 1000px;
@@ -833,7 +838,25 @@ body {
             text-align: left;
             font-size: 1.2rem;
             font-weight: 600;
-            margin-bottom: 2rem;
+            margin-bottom: 1.5rem;
+          }
+
+          h6{
+            text-align: left;
+            font-size: 1rem;
+            font-weight: 500;
+            margin-bottom: 0.5rem;
+          }
+
+          ul{
+            text-align: left;
+            font-size: 1rem;
+            margin-bottom: 1rem;
+          }
+
+          p{
+            text-align: left;
+            font-size: 1rem;
           }
           
           img{
@@ -882,6 +905,30 @@ body {
           
         }
 
+        
+
+        .buttonin{
+          display: flex;
+          justify-content: center;
+  
+          button{
+  
+            background-color: black;
+            color: white;
+            padding: 10px 16px;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: background-color 0.3s ease-in-out;
+            margin-bottom: 3rem;
+    
+            &:hover{
+              color: rgb(254, 192, 5);
+            }
+          }
+  
+        }
+
       }
 
       .hifi{
@@ -896,27 +943,10 @@ body {
 
       }
 
-      .buttonin{
-        display: flex;
-        justify-content: center;
+      
+      
 
-        button{
 
-          background-color: black;
-          color: white;
-          padding: 10px 16px;
-          border: none;
-          border-radius: 10px;
-          cursor: pointer;
-          transition: background-color 0.3s ease-in-out;
-          margin-bottom: 3rem;
-  
-          &:hover{
-            color: rgb(254, 192, 5);
-          }
-        }
-
-      }
     }
   }
 
