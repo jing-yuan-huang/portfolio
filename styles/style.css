@@ -387,12 +387,13 @@ body main section.workintro-area section.contect .intro {
   margin-bottom: 3rem;
 }
 body main section.workintro-area section.contect .intro h1 {
-  font-size: 3rem;
+  font-size: 2.5rem;
   font-weight: 600;
 }
 body main section.workintro-area section.contect .intro h2 {
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   padding-top: 0.5rem;
+  font-weight: 500;
 }
 body main section.workintro-area section.contect .intro video {
   width: 100%;
@@ -433,7 +434,7 @@ body main section.workintro-area section.contect .bkground .overview {
 body main section.workintro-area section.contect .bkground .overview .overviewbox {
   flex: 1;
   min-width: 300px;
-  max-width: 600px;
+  max-width: 800px;
   text-align: left;
 }
 body main section.workintro-area section.contect .bkground .overview .overviewbox .chall-role {
@@ -744,71 +745,215 @@ body main section.workintro-area section.contect .buttonin button {
 body main section.workintro-area section.contect .buttonin button:hover {
   color: rgb(254, 192, 5);
 }
-body main section.workintro-area .hifi {
+body main section.workintro-area section.contect .hifi {
   margin: 5rem 2rem;
   background-color: #e0dddd;
 }
-body main section.workintro-area .hifi h3 {
+body main section.workintro-area section.contect .hifi h3 {
   font-size: 1.8rem;
   font-weight: 600;
   margin-top: 2.5rem;
 }
-body footer {
+body main section.workintro-area section.contect .function {
+  width: 100%;
+  max-width: 800px;
+  text-align: left;
+}
+body main section.workintro-area section.contect .function h3 {
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+}
+body main section.workintro-area section.contect .function h5 {
+  font-size: 1.3rem;
+  font-weight: 500;
+  color: rgb(4, 122, 219);
+  margin: 1rem auto;
+}
+body main section.workintro-area section.contect .function ol li strong {
+  color: rgb(4, 122, 219);
+}
+body main section.workintro-area section.contect .function ol li span {
+  color: #c04e4e;
+  font-weight: 500;
+}
+body main section.workintro-area section.contect .function ol li::marker {
+  color: rgb(4, 122, 219);
+  font-weight: bold;
+}
+body main section.workintro-area section.contect .function2 {
+  width: 100%;
+  max-width: 800px;
+  text-align: left;
+}
+body main section.workintro-area section.contect .function2 h5 {
+  font-size: 1.3rem;
+  font-weight: 500;
+  color: #6aa84f;
+  margin: 1rem auto;
+}
+body main section.workintro-area section.contect .function2 ol li strong {
+  color: #6aa84f;
+}
+body main section.workintro-area section.contect .function2 ol li span {
+  color: #c04e4e;
+  font-weight: 500;
+}
+body main section.workintro-area section.contect .function2 ol li::marker {
+  color: #6aa84f;
+  font-weight: bold;
+}
+body main section.workintro-area section.contect .picsingle {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 4rem;
+  gap: 10%;
+}
+body main section.workintro-area section.contect .picsingle .stage {
+  flex: 1;
+  max-width: 800px;
+  text-align: center;
+}
+body main section.workintro-area section.contect .picsingle .stage img {
+  width: 100%;
+  max-width: 800px;
+  height: auto;
+  margin: 0.6rem;
+}
+body main section.workintro-area section.contect .interact {
+  width: 100%;
+  max-width: 800px;
+  text-align: left;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+}
+body main section.workintro-area section.contect .interact h5 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin: 2rem 0.5rem;
+}
+body main section.workintro-area section.contect .interact .pic {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 4rem;
+  gap: 10%;
+}
+body main section.workintro-area section.contect .interact .pic .stage {
+  flex: 1;
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+}
+body main section.workintro-area section.contect .interact .pic .stage h6 {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+body main section.workintro-area section.contect .interact .pic .stage video {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  margin: 0.6rem;
+  border-radius: 10px;
+}
+body main section.workintro-area section.contect .interact2 {
+  max-width: 1200px;
+  margin: 2rem auto;
+}
+body main section.workintro-area section.contect .interact2 h5 {
+  text-align: left;
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin: 2rem 0.5rem;
+}
+body main section.workintro-area section.contect .interact2 .interpic {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+body main section.workintro-area section.contect .interact2 .interpic .stage {
+  width: 100%;
+  text-align: center;
+}
+body main section.workintro-area section.contect .interact2 .interpic .stage h6 {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+body main section.workintro-area section.contect .interact2 .interpic .stage video {
+  width: 100%;
+  height: auto;
+  margin: 0.6rem auto;
+  border-radius: 10px;
+}
+body main footer {
   background-color: rgb(43, 42, 42);
   text-align: center;
   padding: 40px 0;
   color: #f9f7f7;
 }
-body footer .footer-container {
+body main footer .footer-container {
   max-width: 800px;
   margin: 0 auto;
   padding: 0 20px;
 }
-body footer .footer-container h2 {
+body main footer .footer-container h2 {
   font-size: 24px;
   margin-bottom: 10px;
   color: #faf7f7;
 }
-body footer .footer-container p {
+body main footer .footer-container p {
   font-size: 16px;
   margin: 0 0 20px 0;
   line-height: 1.5;
 }
-body footer .footer-container .footer-links {
+body main footer .footer-container .footer-links {
   display: inline-flex;
   gap: 20px;
   margin-bottom: 25px;
 }
-body footer .footer-container .footer-links a {
+body main footer .footer-container .footer-links a {
   color: #faf9f8;
   text-decoration: none;
   font-weight: 500;
 }
-body footer .footer-container .footer-links a:hover {
+body main footer .footer-container .footer-links a:hover {
   color: rgb(254, 192, 5);
 }
-body footer .footer-container .footer-links .footer-separator {
+body main footer .footer-container .footer-links .footer-separator {
   margin: 0 auto 25px;
   width: 80%;
   max-width: 600px;
   border: none;
   border-top: 1px solid #ccc;
 }
-body footer .footer-container .footer-links .copyright {
+body main footer .footer-container .footer-links .copyright {
   font-size: 14px;
   color: #f9f8f8;
   margin: 0;
 }
-
+@media (max-width: 900px) {
+  body main .interact2 .interpic {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+  body main .tag {
+    display: none !important;
+  }
+}
+@media (max-width: 600px) {
+  body main .interact2 .interpic {
+    grid-template-columns: repeat(1, 1fr) !important;
+  }
+}
 @media screen and (max-width: 800px) {
-  body header {
+  body body header {
     padding: 1.5rem 2.5rem 0.5rem 0.5rem;
   }
-  body header .menu-toggle {
+  body body header .menu-toggle {
     display: block !important;
     margin-right: 0rem;
   }
-  body header nav {
+  body body header nav {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -821,10 +966,10 @@ body footer .footer-container .footer-links .copyright {
     background: rgba(43, 42, 42, 0.95);
     transition: right 0.3s ease-in-out;
   }
-  body header nav.active {
+  body body header nav.active {
     right: 0;
   }
-  body header nav .close-menu {
+  body body header nav .close-menu {
     display: block !important;
     position: absolute;
     top: 1rem;
@@ -835,7 +980,7 @@ body footer .footer-container .footer-links .copyright {
     color: white;
     cursor: pointer;
   }
-  body header nav ul {
+  body body header nav ul {
     display: flex;
     flex-direction: column;
     gap: 2rem;
@@ -843,73 +988,73 @@ body footer .footer-container .footer-links .copyright {
     padding: 0;
     margin-top: 5rem;
   }
-  body header nav ul li {
+  body body header nav ul li {
     list-style: none;
   }
-  body header nav ul li a {
+  body body header nav ul li a {
     font-size: 1.5rem;
     font-weight: 400;
     padding: 0.5rem 1rem;
   }
-  body main section.main-area div.info h1 {
+  body body main section.main-area div.info h1 {
     font-size: 7vw;
     padding: 0.5rem;
   }
-  body main section.main-area div.info h2 {
+  body body main section.main-area div.info h2 {
     font-size: 3.5vw;
   }
-  body main section.work-area div.cards-container2 .card .card-content {
+  body body main section.work-area div.cards-container2 .card .card-content {
     flex-direction: column;
   }
-  body main section.work-area div.cards-container2 .card .card-content h3 {
+  body body main section.work-area div.cards-container2 .card .card-content h3 {
     flex: 1 1 20px !important;
   }
-  body main section.work-area div.cards-container2 .card .card-content .describe {
+  body body main section.work-area div.cards-container2 .card .card-content .describe {
     flex: 1 1 50px !important;
   }
-  body main section.normal-area .publications .publication {
+  body body main section.normal-area .publications .publication {
     flex-direction: column;
     align-items: center;
     justify-content: center;
     margin: 1rem;
   }
-  body main section.normal-area .publications .publication img {
+  body body main section.normal-area .publications .publication img {
     flex: 0 0 100px;
     padding-right: 1rem;
   }
-  body main section.normal-area .publications .publication .describe {
+  body body main section.normal-area .publications .publication .describe {
     flex: unset;
     width: 100%;
     padding: 0;
   }
-  body main section.workintro-area .tag {
-    display: none;
+  body body main section.workintro-area .tag {
+    display: none !important;
   }
-  body main section.workintro-area .intro h1 {
+  body body main section.workintro-area .intro h1 {
     font-size: 2.2rem !important;
   }
-  body main section.workintro-area .intro video {
+  body body main section.workintro-area .intro video {
     width: 90%;
   }
-  body main section.workintro-area .background .overview {
+  body body main section.workintro-area .background .overview {
     flex-direction: column;
     align-items: center;
     text-align: center;
   }
-  body main section.workintro-area .background .overview .overviewbox {
+  body body main section.workintro-area .background .overview .overviewbox {
     text-align: left;
   }
-  body main section.workintro-area .research2 {
+  body body main section.workintro-area .research2 {
     flex-direction: column;
     align-items: center;
   }
-  body main section.workintro-area .research2 .researchcontainer {
+  body body main section.workintro-area .research2 .researchcontainer {
     padding-right: 0;
   }
-  body main section.workintro-area .pic img {
+  body body main section.workintro-area .pic img {
     width: 90%;
   }
-  body main section.workintro-area .design img {
+  body body main section.workintro-area .design img {
     width: 90%;
   }
 }
